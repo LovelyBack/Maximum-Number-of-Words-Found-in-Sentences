@@ -1,6 +1,6 @@
 # Solving the problem on leet code
 
-## Maximum Number of Words Found in Sentences
+## Maximum Number of Words Found in Sentences with golang
 
 A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
 
