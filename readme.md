@@ -4,7 +4,7 @@
 
 A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
 
-You are given an array of strings sentences, where each ```sentences[i]``` represents a single sentence.
+You are given an slice of strings sentences, where each ```sentences[i]``` represents a single sentence.
 
 Return the maximum number of words that appear in a single sentence.
 
@@ -15,9 +15,9 @@ Return the maximum number of words that appear in a single sentence.
 
 ### how it works
 
-You can change the array passed to ```mostWordsFound``` function in this code
+You can change the slice passed to ```mostWordsFound``` function in this code
 
-- First, we called the function and passed the array to it,
+- First, we called the function and passed the slice to it,
 
 ```golang
 func main(){
@@ -32,10 +32,10 @@ func mostWordsFound(sentence []string){
     //We define this variable so that the maximum value is saved in it
     max := 0
 
-    // now we define a for loop on the array"sentence"
+    // now we define a for loop on the slice"sentence"
     for _, word := range sentence{
-        //Here we use the split method to convert each sentence into several words and each word into an array member.
-        // and then we  get the len() of the array
+        //Here we use the split method to convert each sentence into several words and each word into an slice member.
+        // and then we  get the len() of the slice
         //Here we saved the number of words of each sentence in the length variable
         lenght := len(strings.Split(word," "))
         
